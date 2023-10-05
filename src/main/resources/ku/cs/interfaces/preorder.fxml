@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="borderAddProduct" prefHeight="500.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ku.cs.controllers.product.PreorderController">
+    <left>
+        <Pane prefHeight="500.0" prefWidth="375.0" styleClass="linear-gradient" stylesheets="@styles/style2.css" BorderPane.alignment="CENTER">
+            <children>
+                <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="375.0">
+                    <children>
+                        <HBox prefHeight="36.0" prefWidth="105.0">
+                            <children>
+                                <Circle fx:id="btnClose" fill="#ff6363" onMouseClicked="#handleMouseEvent" radius="10.0" stroke="WHITE" strokeType="INSIDE">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#ffff69" layoutX="20.0" layoutY="20.0" radius="10.0" stroke="WHITE" strokeType="INSIDE">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin>
+                                </Circle>
+                                <Circle fill="#83dd83" layoutX="40.0" layoutY="20.0" radius="10.0" stroke="WHITE" strokeType="INSIDE">
+                                    <HBox.margin>
+                                        <Insets left="10.0" top="10.0" />
+                                    </HBox.margin>
+                                </Circle>
+                            </children>
+                        </HBox>
+                        <Circle fx:id="productPicture" fill="WHITE" radius="120.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="5.0">
+                            <VBox.margin>
+                                <Insets top="15.0" />
+                            </VBox.margin>
+                        </Circle>
+                        <Label fx:id="NameLabel" text="NameLabel" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="25.0" />
+                            </font>
+                            <VBox.margin>
+                                <Insets top="15.0" />
+                            </VBox.margin>
+                        </Label>
+                    </children>
+                </VBox>
+            </children>
+        </Pane>
+    </left>
+    <center>
+        <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Pane prefHeight="200.0" prefWidth="200.0" styleClass="back-white" stylesheets="@styles/style2.css">
+                    <children>
+                        <VBox alignment="CENTER_LEFT" prefHeight="500.0" prefWidth="375.0">
+                            <children>
+                                <Label prefHeight="45.0" text="Product Pre-Order">
+                                    <font>
+                                        <Font name="System Bold" size="30.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="30.0" />
+                                    </VBox.margin>
+                                </Label>
+                                <TextField fx:id="nameLabel" prefHeight="40.0" prefWidth="300.0" promptText="Product Name">
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="20.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="priceLabel" layoutX="40.0" layoutY="233.0" prefHeight="40.0" prefWidth="300.0" promptText="Product Price">
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="20.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="productTypeLabel" layoutX="40.0" layoutY="237.0" prefHeight="40.0" prefWidth="300.0" promptText="Product Type">
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="20.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <TextField fx:id="quantityTextField" layoutX="40.0" layoutY="239.0" prefHeight="40.0" prefWidth="300.0" promptText="Please enter the amount you want">
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="20.0" />
+                                    </VBox.margin>
+                                </TextField>
+                                <Button fx:id="btnBuy" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="320.0" styleClass="button-login" stylesheets="@styles/style2.css" text="Pre-Order">
+                                    <VBox.margin>
+                                        <Insets left="30.0" right="30.0" top="20.0" />
+                                    </VBox.margin>
+                                </Button>
+                            </children>
+                        </VBox>
+                        <ImageView fx:id="btnBack" fitHeight="40.0" fitWidth="40.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#handleMouseEvent" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../icons/back.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </StackPane>
+    </center>
+</BorderPane>

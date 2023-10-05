@@ -1,0 +1,123 @@
+.linear-gradient {
+    -fx-background-color: linear-gradient(to bottom left, #FF7575, #91A7FF);
+}
+
+.button-login {
+    -fx-background-color: #FF6263;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-menu {
+    -fx-background-color: none;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-size: 14;
+}
+
+.button-back {
+    -fx-background-color: none;
+    -fx-text-fill: #FFFFFF;
+}
+
+.button-change-profile-picture {
+    -fx-background-color: #FF7575;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 20;
+}
+
+.text-field {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+}
+
+.button-do-not-have-account {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20;
+    -fx-text-fill: #FF6263;
+}
+
+.back-white {
+    -fx-background-color: #FFFFFF;
+}
+
+.menu-bar {
+    -fx-background-color: #f7777c;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-opacity: 0;
+}
+
+.tab-pane {
+    -fx-tab-min-width: 90px;
+    -fx-tab-min-height: 30px;
+}
+
+.tab {
+    -fx-background-insets: 0 0 0 0,0,0;
+}
+
+.tab-pane .tab {
+    -fx-background-color: white;
+}
+
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-cell-size: 20;
+    -fx-background-color: #FFFFFF;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #FF6263;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-view .cell {
+    -fx-cell-size: 30;
+    -fx-alignment: center-left;
+    -fx-text-fill: #000000;
+    -fx-alignment: CENTER_LEFT;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #7FACF3FF;
+}
+
+.table-row-cell:selected .text {
+    -fx-fill: white;
+}
+
+.scroll-pane {
+    -fx-background-color: white;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #FF7575;
+    -fx-background-radius: 5em;
+    -fx-opacity: 0.6;
+}
+
+.shadow {
+    -fx-effect: dropshadow(gaussian , #c9c4c4, 10, 0, 1, 1);
+    -fx-background-radius: 10 ;
+}
+
+.combo-box-base {
+    -fx-background-color: transparent;
+}
+
+.combo-box-popup > .list-view {
+    -fx-background-color: transparent;
+}
+
+.radius-X{
+    -fx-background-radius: 20;
+}
